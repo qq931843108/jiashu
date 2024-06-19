@@ -5,53 +5,75 @@
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Describe how and why you chose your iGEM project.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2024 Medals Page</a> for more information.</p>
+
+<div class="row mt-4 page-container">
+  <div class="col-lg-12">
+    <h2>Background</h2>
+    <div>
+      <div>Depression is one of the most common neuropsychiatric disorders, with a prevalence rate exceeding 4.5%. Although existing antidepressants are generally effective, they come with numerous side effects such as drowsiness, seizures, and cardiotoxicity. Moreover, nearly half of the patients fail to achieve sustained remission, and approximately one-third do not respond to any interventions.
+      </div>
+      <div>Our research has identified that the traditional Chinese medicine, Chaihu (Bupleurum), can regulate neurotransmitters, alleviate depressive symptoms, and improve sleep quality. After studying the components of Chaihu, we discovered that kaempferol, a substance with significant biological activity, shows good potential in treating depression and has a certain alleviating effect on depressive symptoms.
+      </div>
     </div>
   </div>
+
+  <div class="col-lg-12">
+    <h2>Challenges</h2>
+    <div>
+      <div>The cost of psychotherapy for depression is high, while pharmacotherapy is often accompanied by significant side effects.
+      </div>
+      <div>The natural source of kaempferol is relatively limited, making it difficult to meet the demands for large-scale applications.</div>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <h2>Design</h2>
+    <div>
+      <div>We selected the relatively inexpensive naringenin as the substrate and introduced the genes for flavanone 3-hydroxylase (F3H) and flavonol synthase (FLS) into Escherichia coli. Our engineered bacteria can successfully convert naringenin into kaempferol.
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <h2>Gene Circuit</h2>
+    <div class="flex-column align-center">
+      <img src="https://static.igem.wiki/teams/5482/desc/lu-xian-tu.png" style="width: 80%;margin: 0 auto;" />
+      <div class="img-desc">F3H: Flavanone 3-hydroxylase, FLS: Flavonol synthase</div>
+      <div>The conversion of naringenin to kaempferol involves the action of two key enzymes: First, flavanone 3-hydroxylase (F3H) introduces a hydroxyl group into naringenin; next, flavonol synthase (FLS) forms a double bond at the C2-C3 position of dihydrokaempferol. This series of enzymatic reactions ultimately transforms naringenin into the biologically active kaempferol.
+      </div>
+    </div>
+  </div>
+  
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>A clear and concise description of your project.</li>
-      <li>A detailed explanation of why your team chose to work on this particular project.</li>
-      <li>References and sources to document your research.</li>
-      <li>Use illustrations and other visual resources to explain your project.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
-      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
-      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
-      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
-      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
-      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
-    </ul>
-  </div>
-</div>
+<style>
+  .page-container {
+    font-family: emoji;
+    font-size: 1.2rem;
+  }
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Some advice</h2>
-    <hr>
-    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr>
-    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
-  </div>
-</div>
+  .img-desc {
+    font-size: 1rem;
+    color: #bdc3c7;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+</style>
 
 {% endblock %}
