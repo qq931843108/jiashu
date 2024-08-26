@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
-    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
-    <!-- Bootstrap CSS -->
-    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-    <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
 
-    <title>{% block title %}{% endblock %} | JIASHU-SouthChina - iGEM 2024</title>
+  <!-- Custom CSS -->
+  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+
+  <title>{% block title %}{% endblock %} | JIASHU-SouthChina - iGEM 2024</title>
 
 </head>
+
 <body>
   <!-- Navigation -->
   {% include 'menu.html' %}
 
   <!-- Header -->
-  <header class="bg-hero py-5 mb-5">
+  <!-- <header class="bg-hero py-5 mb-5">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
@@ -31,9 +33,9 @@
       </div>
     </div>
   </header>
-
+ -->
   <!-- Page Content -->
-  <div class="container">
+  <div>
     {% block page_content %}{% endblock %}
   </div>
 
@@ -43,4 +45,5 @@
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 </body>
+
 </html>
